@@ -1,5 +1,3 @@
-const { count } = require("node:console");
-
 //Bài tập 1
 const car = {
   make: 'Toyota',
