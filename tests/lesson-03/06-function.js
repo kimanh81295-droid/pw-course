@@ -21,15 +21,13 @@ const students = [
     { name: "Dung", score: 92 },
     { name: "Em", score: 88 }
 ];
-
 const threshold = 85;
-
-function getTopStudents(students) {
+function getTopStudents(students, threshold) {
     if (students.score > threshold) {
         return students;
     }
 }
-const topStudents = students.filter(getTopStudents);
+const topStudents = students.filter((student) => getTopStudents(student, threshold));
 console.log(topStudents);
 
 //Bài tập 4
